@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="javascript/script.js" type="module" defer></script>
+    <title>SPACE QUIZ</title>
+</head>
+<body>
+    <header>
+        <h1>
+          Quiz admin pagina
+        </h1>
+    </header>
+    <main>
+        <section>
+            <form id="question-form" action="/admin" enctype="application/x-www-form-urlencoded" method="POST">
+                
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title">
+                
+                <label for="hint">Hint:</label>
+                <input type="text" id="hint" name="hint">
+    
+                <label for="image">Image url:</label>
+                <input type="text" id="image" name="image">
+    
+                <label for="answer">Answer: </label>
+                <input type="text" name="answer" id="answer">
+    
+                <input type="submit">
+            </form>
+        </section>
+   
+    </main>
+    <script src="/socket.io/socket.io.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="javascript/script.js" type="module" defer></script>
+    <title>SPACE QUIZ</title>
+</head>
+<body>
+    <header>
+        <h1>
+          NASA Quiz 
+        </h1>
+    </header>
+    <main>
+        <!-- USERNAME -->
+        <section id="username-section" class="">
+            <h2>Create an username</h2>
+            <form id="username-form">
+                <input type="text" placeholder="username" id="username-input">
+                <button id="submit-username" type="submit">Create username</button>
+            </form>
+            </section>
+
+        <section id="quiz" class="invisible">
+          <ul id="quiz-chat">
+          </ul>
+
+          <section class="question1" id="vraag1">
+            <h3>Which planet is this?</h3>
+            <p><%= hint %></p>
+            <img src="<%= image.href %>" alt="The image of the first question">
+            <form id="chat-form">
+                <input type="text" autocomplete="off" id="quiz-input" placeholder="Your answer here...">
+                <button><span>Send</span></button>
+              </form>
+            </section>
+
+            <section class="invisible" id="vraag2">
+              <h3>Which planet is this?</h3>
+              <p><%= hint2 %></p>
+              <img src="<%= image2.href %>" alt="The image of the first question">
+              <form id="question2-form">
+                  <input type="text" autocomplete="off" id="question2-input" placeholder="Your answer here...">
+                  <button><span>Send</span></button>
+                </form>
+              </section>
+
+              <section class="invisible" id="vraag3">
+                <h3>Which planet is this?</h3>
+                <p><%= hint3 %></p>
+                <img src="<%= image3.href %>" alt="The image of the first question">
+                <form id="question3-form">
+                    <input type="text" autocomplete="off" id="question3-input" placeholder="Your answer here...">
+                    <button><span>Send</span></button>
+                  </form>
+                </section>
+
+                <section class="invisible" id="vraag4">
+                  <h3>Which planet is this?</h3>
+                  <p><%= hint4 %></p>
+                  <img src="<%= image4.href %>" alt="The image of the first question">
+                  <form id="question4-form">
+                      <input type="text" autocomplete="off" id="question4-input" placeholder="Your answer here...">
+                      <button><span>Send</span></button>
+                    </form>
+                  </section>
+        </section>
+        <section id="end" class="invisible">
+          <p>
+            Thank you for playing!
+          </p>
+          <a href="/">BATTLE AGAIN!</a>
+        </section>
+      </main>
+
+      <footer>
+        <section id="username" class="invisible">
+            <h3>PLAYERS</h3>
+            <ul id="usernameList">
+            </ul>
+            </section>
+      </footer>
+    <script src="/socket.io/socket.io.js"></script>
+</body>
+</html>
