@@ -367,6 +367,9 @@ Als het antwoord fout is krijgen alle gebruikers alleen een melding dat het antw
 * Efficientere code voor het controleren op het juiste antwoord
 * Leaderboord die punten bij houdt per gebruiker
 
+## Reflectie
+Ik heb in een korte tijd echt super veel geleerd over websockets. Ik heb gemerkt dat je hiermee ideaal kan communiceren tussen de server en client side
+van de webapp. Achteraf had ik websockets heel erg goed kunnen gebruiken voor de meesterproef. Ik vind dat ik bij dit vak veel heb kunnen experimenteren en heb dan ook heel veel geleerd. Ik had echter graag nog wel iets meer met de gebruikersdata willen doen zoals een score bijhouden. 
 
 
 
